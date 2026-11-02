@@ -47,7 +47,7 @@ def stk_push():
 
     env = os.environ.get("DARAJA_ENV", "sandbox")
     base_url = "https://sandbox.safaricom.co.ke" if env == "sandbox" else "https://api.safaricom.co.ke"
-    api_url = f"{base_url}/mpesa/stkpush/v1/processurl"
+    api_url = f"{base_url}/mpesa/stkpush/v1/processrequest"
 
     timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
     shortcode = os.environ.get("DARAJA_SHORTCODE", "174379")
